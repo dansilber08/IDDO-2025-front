@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './styles/styles.css';
-
+  
 function Transferir() {
+  const navigate = useNavigate();
   const [monto, setMonto] = useState('');
   const [confirmacion, setConfirmacion] = useState('');
 
@@ -22,6 +24,7 @@ function Transferir() {
 
   return (
     <div className="container">
+    <button className="btn-volver" onClick={() => navigate('/')}>Volver</button>
       <h1>Transferir</h1>
       <div>
         <p>Elige un monto:</p>
