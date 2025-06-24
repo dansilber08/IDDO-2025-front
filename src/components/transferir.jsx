@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './styles.css';  
+import './styles/styles.css';
 
 function Transferir() {
   const [monto, setMonto] = useState('');

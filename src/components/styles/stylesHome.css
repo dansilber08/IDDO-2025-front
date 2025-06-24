@@ -1,0 +1,48 @@
+.home-container {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center; 
+    height: 100vh; 
+    gap: 20px; 
+    background-color: white;
+  }
+  
+  
+  .btn-transferir {
+    background-color: blue;
+    color: black;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    width: 200px;
+    text-align: center;
+  }
+  
+  
+  .btn-recibir {
+    background-color: blue;
+    color: black;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    width: 200px;
+    text-align: center;
+  }
+  .monto-dinero {
+    background-color: #f0ffba;
+    border-radius: 15px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 300px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
