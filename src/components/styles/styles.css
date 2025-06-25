@@ -1,4 +1,5 @@
 .container {
+    font-family: 'Be Vietnam Pro', sans-serif;
     text-align: center;
     margin-top: 50px;
   }
@@ -12,7 +13,7 @@
     border: 1px solid #ccc;
   }
   
-  .boton-confirmar {
+  /* .boton-confirmar {
     padding: 10px 20px;
     font-size: 16px;
     background-color: #4CAF50;
@@ -20,7 +21,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
+  } */
   
   .boton-monto {
     margin: 5px;
@@ -30,7 +31,7 @@
   
   .btn-volver {
     background-color: gray;
-    color: black;
+    color:white;
     padding: 20px 40px;
     border: none;
     border-radius: 20px;
@@ -41,3 +42,36 @@
     top: 20px;    
     left: 20px;
   }
+  .slide-container {
+    width: 220px;
+    height: 50px;
+    background-color: #d6eccb;
+    border-radius: 30px;
+    position: relative;
+    margin: 20px auto;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .slide-fill {
+    height: 100%;
+    background-color: #6ea16e;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: width 0.1s ease;
+  }
+  
+  .slide-button {
+    width: 50px;
+    height: 50px;
+    background-color: #4c864c;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    cursor: grab;
+    transition: left 0.1s ease;
+  }
+  
