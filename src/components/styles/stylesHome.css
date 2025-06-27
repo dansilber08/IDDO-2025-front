@@ -1,48 +1,75 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/* Contenedor principal */
 .home-container {
-    font-family: 'Be Vietnam Pro', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;  
-    justify-content: center; 
-    height: 100vh; 
-    gap: 20px; 
-    background-color: white;
-  }
-  
-  
-  .btn-transferir {
-    background-color: blue;
-    color: black;
-    padding: 20px 40px;
-    border: none;
-    border-radius: 20px;
-    font-size: 18px;
-    width: 200px;
-    text-align: center;
-  }
-  
-  
-  .btn-recibir {
-    background-color: blue;
-    color: black;
-    padding: 20px 40px;
-    border: none;
-    border-radius: 20px;
-    font-size: 18px;
-    width: 200px;
-    text-align: center;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh; /* compatible con móviles */
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 20px;
+  background-color: white;
+}
+
+/* Botones */
+.btn-transferir,
+.btn-recibir {
+  background-color: blue;
+  color: white;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Monto de dinero */
+.monto-dinero {
+  background-color: #f0ffba;
+  border-radius: 15px;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Responsivo para pantallas chicas */
+@media (max-width: 500px) {
   .monto-dinero {
-    background-color: #f0ffba;
-    border-radius: 15px;
-    padding: 20px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 300px;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 1rem;
+    padding: 15px 20px;
   }
-  
+
+  .btn-transferir,
+  .btn-recibir {
+    padding: 15px 20px;
+    font-size: 0.9rem;
+  }
+
+  .home-container {
+    gap: 15px;
+  }
+}
