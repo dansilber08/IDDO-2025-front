@@ -177,3 +177,11 @@ html, body {
     max-width: 90%;
   }
 }
+.comprobanteImg {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
