@@ -17,7 +17,7 @@ export default function Home() {
         <span className="plata">${monto.toLocaleString()}</span>
       </div>
       <button className="btn-transferir" onClick={() => navigate('/transferir')}>
-        Transferencias
+        Transferir
       </button>
       <button className="btn-recibir" onClick={() => navigate('/recibir')}>
         Recibir

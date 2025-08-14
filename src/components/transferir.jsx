@@ -47,7 +47,7 @@ function Transferir() {
 
     setTimeout(() => {
       setMostrarComprobante(false);
-      navigate('/');
+      navigate('/transferencias');
     }, 3000);
   };
 
@@ -73,7 +73,7 @@ function Transferir() {
 
   return (
     <div className="container">
-      <button className="btn-volver" onClick={() => navigate('/')}>Volver</button>
+      <button className="btn-volver" onClick={() => navigate('/transferencias')}>Volver</button>
       <h1>Transferir</h1>
       <input
         type="number"
