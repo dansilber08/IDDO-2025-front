@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="#ffffff" stroke-width="12" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Azul (ala izquierda) -->
+    <polygon points="56,48 168,128 56,208" fill="#00A0FF"/>
+    <!-- Amarillo (arriba derecha) -->
+    <polygon points="168,128 224,128 188,92" fill="#FFD02D"/>
+    <!-- Rojo (abajo derecha) -->
+    <polygon points="168,128 188,164 224,128" fill="#FF3A44"/>
+    <!-- Verde (arriba izquierda) -->
+    <polygon points="56,48 168,128 188,92" fill="#00D95F"/>
+  </g>
+</svg> 

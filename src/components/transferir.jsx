@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './styles/styles.css';
-import comprobanteImg from '../Assets/comprobanteDemo.jfif';
+import comprobanteImg from '../Assets/image 2.png';
 
 function Transferir() {
   const navigate = useNavigate();
