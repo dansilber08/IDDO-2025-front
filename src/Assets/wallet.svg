@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#B1A5FF"/>
+      <stop offset="100%" stop-color="#8D7BFF"/>
+    </linearGradient>
+  </defs>
+  <!-- Flap -->
+  <path d="M46 44 L152 8 C161 5 170 12 170 22 L170 52 L46 52 Z" fill="#CDE0FF" stroke="#4F3FB0" stroke-width="12" stroke-linejoin="round"/>
+  <!-- Body -->
+  <rect x="16" y="52" width="200" height="140" rx="30" fill="url(#g1)" stroke="#4F3FB0" stroke-width="14" stroke-linejoin="round"/>
+  <!-- Strap -->
+  <rect x="184" y="102" width="56" height="40" rx="14" fill="#B7A7FF" stroke="#4F3FB0" stroke-width="14" stroke-linejoin="round"/>
+  <circle cx="206" cy="122" r="6" fill="#4F3FB0"/>
+  <!-- Face -->
+  <circle cx="86" cy="122" r="8" fill="#4F3FB0"/>
+  <circle cx="122" cy="122" r="8" fill="#4F3FB0"/>
+  <path d="M92 144 C102 156 116 156 126 144" stroke="#4F3FB0" stroke-width="12" stroke-linecap="round"/>
+  <!-- Legs -->
+  <!-- Back leg -->
+  <path d="M96 184 L80 206 L58 222 C48 230 50 238 66 238 C78 238 86 234 86 228 C86 224 78 220 68 216 L92 194 Z" fill="#4F3FB0"/>
+  <!-- Front leg and foot -->
+  <path d="M140 184 C154 202 164 222 170 238 L196 222 C206 216 218 218 218 226 C218 238 196 254 176 266 C170 270 162 266 160 258 C156 246 148 226 136 206 Z" fill="#4F3FB0"/>
+</svg> 
