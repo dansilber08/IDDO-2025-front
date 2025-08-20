@@ -9,7 +9,7 @@ function Transferir() {
   const [confirmacion, setConfirmacion] = useState('');
   const [mostrarComprobante, setMostrarComprobante] = useState(false);
   const [sliderX, setSliderX] = useState(0);
-  const [saldo, setSaldo] = useState(1000); 
+  const [saldo, setSaldo] = useState(1000);
 
   const maxSlide = 200;
 
@@ -51,8 +51,10 @@ function Transferir() {
     }, 3000);
   };
 
+  // --- Eventos de PC (mouse/drag) ---
   const handleDrag = (e) => {
-    const newX = e.clientX - e.currentTarget.parentElement.getBoundingClientRect().left;
+    const newX =
+      e.clientX - e.currentTarget.parentElement.getBoundingClientRect().left;
     if (newX >= 0 && newX <= maxSlide) {
       setSliderX(newX);
     }
@@ -71,9 +73,35 @@ function Transferir() {
     }
   };
 
+  // --- Eventos de móvil (touch) ---
+  const handleTouchMove = (e) => {
+    const touch = e.touches[0];
+    const newX =
+      touch.clientX -
+      e.currentTarget.parentElement.getBoundingClientRect().left;
+    if (newX >= 0 && newX <= maxSlide) {
+      setSliderX(newX);
+    }
+  };
+
+  const handleTouchEnd = () => {
+    if (sliderX > maxSlide * 0.9) {
+      handleConfirmar();
+      setSliderX(maxSlide);
+
+      setTimeout(() => {
+        setSliderX(0);
+      }, 2000);
+    } else {
+      setSliderX(0);
+    }
+  };
+
   return (
     <div className="container">
-      <button className="btn-volver" onClick={() => navigate('/transferencias')}>Volver</button>
+      <button className="btn-volver" onClick={() => navigate('/transferencias')}>
+        Volver
+      </button>
       <h1>Transferir</h1>
       <input
         type="number"
@@ -84,13 +112,20 @@ function Transferir() {
       />
 
       <div className="slide-container">
-        <div className="slide-fill" style={{ width: `${sliderX + 25}px` }}></div>
+        <div
+          className="slide-fill"
+          style={{ width: `${sliderX + 25}px` }}
+        ></div>
         <div
           className="slide-button"
           draggable
-          onDragStart={(e) => e.dataTransfer.setDragImage(new Image(), 0, 0)}
+          onDragStart={(e) =>
+            e.dataTransfer.setDragImage(new Image(), 0, 0)
+          }
           onDrag={(e) => handleDrag(e)}
           onDragEnd={handleDragEnd}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
           style={{ left: `${sliderX}px` }}
         />
       </div>
